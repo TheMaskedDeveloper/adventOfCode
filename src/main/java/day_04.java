@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class day_04 {
-    private static List<String> necessaryCredentials = List.of("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid");
+    private static final List<String> necessaryCredentials = List.of("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid");
 
     public static void main(String[] args) {
 
@@ -24,7 +24,7 @@ public class day_04 {
 
         BufferedReader reader;
         try {
-            reader = new BufferedReader(new FileReader(".\\src\\main\\resources\\day_4.txt"));
+            reader = new BufferedReader(new FileReader(".\\src\\main\\resources\\day_04.txt"));
             String line = reader.readLine();
             while (line != null) {
                 StringBuilder credentialString = new StringBuilder(line);
